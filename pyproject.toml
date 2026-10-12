@@ -19,20 +19,6 @@ dev = [
 "pre-commit>=4.2,<5",
 ]
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_.py"]
-python_classes = ["Test"]
-python_functions = ["test_*"]
-addopts = "-ra --strict-markers"
-markers = [
-"smoke: critical smoke tests",
-"api: API tests",
-"ui: UI tests using Selenium",
-"db: database checks",
-"regression: regression tests",
-]
-
 [tool.black]
 line-length = 100
 target-version = ["py312"]
